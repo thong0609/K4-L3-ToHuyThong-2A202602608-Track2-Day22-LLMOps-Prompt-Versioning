@@ -1,0 +1,46 @@
+{
+  "project": "day22-lab",
+  "root_trace_counts": {
+    "ab-rag-query": 50,
+    "rag-query": 50
+  },
+  "routing": {
+    "v2": 31,
+    "v1": 19
+  },
+  "all_50_request_ids_verified": true,
+  "all_ab_runs_completed_without_error": true,
+  "routing_identical_across_two_processes": true,
+  "samples": [
+    {
+      "version": "v1",
+      "trace_id": "01a119fc-5343-7053-b07f-ac407cb7a683",
+      "tree": [
+        "ab-rag-query",
+        "VectorStoreRetriever",
+        "RunnableSequence",
+        "ChatPromptTemplate",
+        "ChatOpenAI",
+        "StrOutputParser"
+      ],
+      "document_count": 3,
+      "context_matches_retrieved_documents": true,
+      "hub_prompt_matches_local": true
+    },
+    {
+      "version": "v2",
+      "trace_id": "01a119fc-60c8-7a20-9c1a-f11a5a41dcf9",
+      "tree": [
+        "ab-rag-query",
+        "VectorStoreRetriever",
+        "RunnableSequence",
+        "ChatPromptTemplate",
+        "ChatOpenAI",
+        "StrOutputParser"
+      ],
+      "document_count": 3,
+      "context_matches_retrieved_documents": true,
+      "hub_prompt_matches_local": true
+    }
+  ]
+}
