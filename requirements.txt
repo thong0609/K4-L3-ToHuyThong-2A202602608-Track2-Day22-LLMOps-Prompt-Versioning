@@ -1,7 +1,7 @@
 # ── LangChain core ────────────────────────────────────────────────
 langchain>=0.3.0
 langchain-core>=0.3.0
-langchain-community>=0.3.0
+langchain-community==0.4.1       # RAGAS 0.4.3 imports legacy vertexai module removed in 0.4.2
 langchain-text-splitters>=0.3.0
 
 # ── LLM Providers (cài tất cả để hỗ trợ đa provider) ─────────────

@@ -1,0 +1,702 @@
+[
+  {
+    "user_input":"What are the three main types of machine learning?",
+    "retrieved_contexts":[
+      "Machine learning is a subfield of artificial intelligence that enables systems to learn from data without being explicitly programmed. The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, models are trained on labeled input-output pairs to learn a mapping function. In unsupervised learning, models discover hidden patterns or structure in unlabeled data. In reinforcement learning, an agent learns to make",
+      "=== Machine Learning Fundamentals ===",
+      "=== Neural Networks and Deep Learning ==="
+    ],
+    "response":"**Kết luận:** Ba loại chính của học máy là học có giám sát, học không có giám sát và học tăng cường.\n\n**Giải thích:** Học có giám sát liên quan đến việc huấn luyện các mô hình trên các cặp dữ liệu đầu vào-đầu ra đã được gán nhãn để học một hàm ánh xạ. Học không có giám sát cho phép các mô hình phát hiện các mẫu hoặc cấu trúc ẩn trong dữ liệu không có nhãn. Học tăng cường là quá trình mà một tác nhân học cách đưa ra quyết định thông qua việc tương tác với môi trường và nhận phần thưởng hoặc hình phạt.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của từng loại học máy, cũng như các ứng dụng thực tế của chúng, không được cung cấp trong context.",
+    "reference":"The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning.",
+    "faithfulness":0.8,
+    "answer_relevancy":0.9110613511,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is overfitting in machine learning?",
+    "retrieved_contexts":[
+      "Overfitting occurs when a model learns the training data too well, including noise, leading to poor generalization on new data. An overfitted model performs excellently on training samples but fails on unseen examples because it has memorized specifics rather than learned general patterns. Signs of overfitting include a large gap between training accuracy and validation accuracy. Techniques to combat overfitting include regularization, dropout, early stopping, and collecting more training data.",
+      "The bias-variance tradeoff is a fundamental concept in machine learning. High bias means underfitting; high variance means overfitting. The optimal model balances both to minimize total error. A high-bias model makes strong assumptions and underfits the data, while a high-variance model is too sensitive to training data fluctuations. The total prediction error can be decomposed into bias squared, variance, and irreducible noise. The goal is to find the sweet spot where neither bias nor variance",
+      "=== Machine Learning Fundamentals ==="
+    ],
+    "response":"**Kết luận:** Overfitting trong machine learning là hiện tượng khi một mô hình học quá kỹ dữ liệu huấn luyện, bao gồm cả nhiễu, dẫn đến khả năng tổng quát kém trên dữ liệu mới.\n\n**Giải thích:** Mô hình bị overfitting sẽ thể hiện hiệu suất xuất sắc trên các mẫu huấn luyện nhưng lại thất bại khi gặp các ví dụ chưa thấy, vì nó đã ghi nhớ các chi tiết cụ thể thay vì học các mẫu tổng quát. Dấu hiệu của overfitting là sự chênh lệch lớn giữa độ chính xác của huấn luyện và độ chính xác của xác thực. Các kỹ thuật như regularization, dropout, và early stopping có thể được sử dụng để giảm thiểu hiện tượng này.\n\n**Giới hạn:** Thông tin về các kỹ thuật cụ thể để chống lại overfitting đã được đề cập, nhưng không có chi tiết về cách thức thực hiện từng kỹ thuật hoặc ví dụ cụ thể về khi nào nên áp dụng chúng.",
+    "reference":"Overfitting occurs when a model learns the training data too well, including noise, leading to poor generalization on new data.",
+    "faithfulness":1.0,
+    "answer_relevancy":1.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"Explain the bias-variance tradeoff.",
+    "retrieved_contexts":[
+      "The bias-variance tradeoff is a fundamental concept in machine learning. High bias means underfitting; high variance means overfitting. The optimal model balances both to minimize total error. A high-bias model makes strong assumptions and underfits the data, while a high-variance model is too sensitive to training data fluctuations. The total prediction error can be decomposed into bias squared, variance, and irreducible noise. The goal is to find the sweet spot where neither bias nor variance",
+      "the sweet spot where neither bias nor variance dominates.",
+      "its variants (Adam, RMSprop, SGD with momentum) to minimize the loss function."
+    ],
+    "response":"**Kết luận:** Bias-variance tradeoff là một khái niệm quan trọng trong học máy, liên quan đến việc cân bằng giữa độ thiên lệch và độ phương sai để tối thiểu hóa tổng lỗi dự đoán.\n\n**Giải thích:** Độ thiên lệch cao (high bias) dẫn đến việc mô hình không phù hợp với dữ liệu (underfitting), trong khi độ phương sai cao (high variance) khiến mô hình quá nhạy cảm với biến động trong dữ liệu huấn luyện (overfitting). Tổng lỗi dự đoán có thể được phân tách thành bình phương độ thiên lệch, độ phương sai và tiếng ồn không thể giảm thiểu. Mục tiêu là tìm ra \"sweet spot\" nơi mà cả độ thiên lệch và độ phương sai đều không chiếm ưu thế.\n\n**Giới hạn:** Thông tin về cách cụ thể để đạt được sự cân bằng này trong thực tiễn, cũng như các phương pháp cụ thể để điều chỉnh mô hình nhằm giảm thiểu bias và variance, không được đề cập trong context.",
+    "reference":"High bias means underfitting; high variance means overfitting. The optimal model balances both to minimize total error.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.8694581985,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"How does regularization prevent overfitting?",
+    "retrieved_contexts":[
+      "Regularization is a technique used to prevent overfitting by discouraging overly complex models. L1 and L2 regularization add penalty terms to the loss function to discourage overly complex models. L1 regularization (Lasso) adds the absolute value of weights, which promotes sparsity. L2 regularization (Ridge) adds the squared magnitude of weights, which keeps weights small but non-zero. The regularization strength is controlled by a hyperparameter lambda. Elastic Net combines both L1 and L2",
+      "Overfitting occurs when a model learns the training data too well, including noise, leading to poor generalization on new data. An overfitted model performs excellently on training samples but fails on unseen examples because it has memorized specifics rather than learned general patterns. Signs of overfitting include a large gap between training accuracy and validation accuracy. Techniques to combat overfitting include regularization, dropout, early stopping, and collecting more training data.",
+      "parameters, and provide a form of translational invariance. Pooling helps control overfitting and reduces the number of computations in subsequent layers."
+    ],
+    "response":"**Kết luận:** Regularization prevents overfitting by adding penalty terms to the loss function, which discourages the model from becoming overly complex.\n\n**Giải thích:** Regularization techniques, such as L1 (Lasso) and L2 (Ridge), introduce additional constraints on the model's weights. L1 regularization promotes sparsity by adding the absolute value of weights, while L2 regularization keeps weights small but non-zero by adding their squared magnitudes. By controlling the complexity of the model through these penalties, regularization helps ensure that the model generalizes better to unseen data rather than memorizing the training data.\n\n**Giới hạn:** Thông tin về cách điều chỉnh hyperparameter lambda để kiểm soát sức mạnh của regularization không được đề cập chi tiết, cũng như không có thông tin về các phương pháp khác như dropout hay early stopping trong ngữ cảnh này.",
+    "reference":"L1 and L2 regularization add penalty terms to the loss function to discourage overly complex models.",
+    "faithfulness":0.9,
+    "answer_relevancy":0.9516902595,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is cross-validation?",
+    "retrieved_contexts":[
+      "Cross-validation is a model evaluation technique that provides a more reliable estimate of performance. Cross-validation splits data into multiple folds to estimate model performance more reliably. In k-fold cross-validation, the dataset is divided into k equal parts; the model is trained on k-1 folds and tested on the remaining fold, repeating k times. Stratified cross-validation preserves the class distribution in each fold. Leave-one-out cross-validation uses a single sample as the",
+      "cross-validation uses a single sample as the validation set.",
+      "direct comparison of performance metrics across experiments. This workflow closes the loop between production monitoring and offline evaluation."
+    ],
+    "response":"**Kết luận:** Cross-validation là một kỹ thuật đánh giá mô hình giúp ước lượng hiệu suất một cách đáng tin cậy hơn.\n\n**Giải thích:** Kỹ thuật này chia dữ liệu thành nhiều phần (folds) để ước lượng hiệu suất của mô hình. Trong k-fold cross-validation, dữ liệu được chia thành k phần bằng nhau, mô hình được huấn luyện trên k-1 phần và kiểm tra trên phần còn lại, quá trình này lặp lại k lần. Stratified cross-validation đảm bảo phân phối lớp được bảo tồn trong mỗi phần, trong khi leave-one-out cross-validation sử dụng một mẫu duy nhất làm tập kiểm tra.\n\n**Giới hạn:** Thông tin về các loại cross-validation khác nhau và cách chúng hoạt động đã được đề cập, nhưng không có thông tin chi tiết về cách chọn số lượng k trong k-fold cross-validation hoặc các ứng dụng cụ thể của từng loại cross-validation.",
+    "reference":"Cross-validation splits data into multiple folds to estimate model performance more reliably.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9027134761,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is backpropagation?",
+    "retrieved_contexts":[
+      "Backpropagation is the core algorithm for training neural networks. Backpropagation computes gradients of the loss with respect to each weight by applying the chain rule of calculus. Starting from the output layer, it propagates error signals backward through the network, computing partial derivatives layer by layer. These gradients indicate how much each weight contributed to the total error. The weights are then updated using gradient descent or its variants (Adam, RMSprop, SGD with momentum)",
+      "=== Neural Networks and Deep Learning ===",
+      "its variants (Adam, RMSprop, SGD with momentum) to minimize the loss function."
+    ],
+    "response":"**Kết luận:** Backpropagation là thuật toán cốt lõi để huấn luyện mạng nơ-ron.\n\n**Giải thích:** Backpropagation tính toán các gradient của hàm mất mát liên quan đến từng trọng số bằng cách áp dụng quy tắc chuỗi trong giải tích. Thuật toán bắt đầu từ lớp đầu ra, truyền tín hiệu lỗi ngược qua mạng, tính toán các đạo hàm riêng theo từng lớp. Các gradient này cho biết mức độ mà mỗi trọng số đã góp phần vào tổng lỗi, từ đó cho phép cập nhật trọng số bằng các phương pháp như gradient descent hoặc các biến thể của nó.\n\n**Giới hạn:** Thông tin về các phương pháp cụ thể để cập nhật trọng số (như Adam, RMSprop, SGD với động lượng) không được giải thích chi tiết trong context.",
+    "reference":"Backpropagation computes gradients of the loss with respect to each weight by applying the chain rule of calculus.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.8241317907,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What are Convolutional Neural Networks primarily used for?",
+    "retrieved_contexts":[
+      "Convolutional Neural Networks (CNNs) are a specialized class of neural networks designed for grid-like data. CNNs are specialized for processing grid-like data such as images. They use convolutional layers that apply learnable filters to detect local features like edges, textures, and shapes at different spatial locations. CNNs exploit translational invariance, meaning a feature detector useful in one region of the image can also be useful in other regions. Applications include image",
+      "Pooling layers are a key component of Convolutional Neural Networks that perform spatial downsampling. Pooling layers reduce spatial dimensions, decreasing computational complexity while retaining important features. Max pooling takes the maximum value in each pooling window, while average pooling computes the mean. By reducing the spatial resolution, pooling layers make the representation smaller and more manageable, reduce the number of parameters, and provide a form of translational",
+      "in other regions. Applications include image classification, object detection, semantic segmentation, and video analysis."
+    ],
+    "response":"**Kết luận:** Convolutional Neural Networks (CNNs) are primarily used for processing grid-like data, particularly images.\n\n**Giải thích:** CNNs are designed to detect local features in images through convolutional layers that apply learnable filters. These networks exploit translational invariance, allowing them to recognize features across different spatial locations in an image. Their applications include image classification, object detection, semantic segmentation, and video analysis, all of which rely on the ability to analyze and interpret visual data.\n\n**Giới hạn:** Thông tin về các ứng dụng cụ thể của CNNs được đề cập, nhưng không có chi tiết về cách thức hoạt động của CNNs trong từng ứng dụng hoặc các loại dữ liệu khác ngoài hình ảnh mà chúng có thể xử lý.",
+    "reference":"CNNs are specialized for processing grid-like data such as images.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.8214417834,
+    "context_recall":1.0,
+    "context_precision":0.8333333333
+  },
+  {
+    "user_input":"How do LSTM networks address the vanishing gradient problem?",
+    "retrieved_contexts":[
+      "gradients to flow unchanged over many time steps. LSTMs are widely used for sequence modeling tasks such as language modeling, machine translation, and time series forecasting.",
+      "Long Short-Term Memory (LSTM) networks are a type of recurrent neural network designed to handle long-range dependencies. LSTMs use gating mechanisms that control information flow through the network. These gates — the input gate, forget gate, and output gate — regulate what information is stored, discarded, or outputted from the cell state. This architecture effectively addresses the vanishing gradient problem that plagues standard RNNs by allowing gradients to flow unchanged over many time",
+      "Backpropagation is the core algorithm for training neural networks. Backpropagation computes gradients of the loss with respect to each weight by applying the chain rule of calculus. Starting from the output layer, it propagates error signals backward through the network, computing partial derivatives layer by layer. These gradients indicate how much each weight contributed to the total error. The weights are then updated using gradient descent or its variants (Adam, RMSprop, SGD with momentum)"
+    ],
+    "response":"**Kết luận:** LSTM networks giải quyết vấn đề gradient biến mất bằng cách sử dụng cơ chế cổng để kiểm soát dòng thông tin qua mạng.\n\n**Giải thích:** Cụ thể, LSTM sử dụng ba cổng: cổng đầu vào, cổng quên và cổng đầu ra, để điều chỉnh thông tin nào được lưu trữ, loại bỏ hoặc xuất ra từ trạng thái ô. Cấu trúc này cho phép gradient chảy qua nhiều bước thời gian mà không bị suy giảm, điều này rất quan trọng cho việc học các phụ thuộc dài hạn trong dữ liệu chuỗi.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của từng cổng trong LSTM và các ví dụ thực tế về ứng dụng của chúng trong các tác vụ khác nhau không được cung cấp trong context.",
+    "reference":"LSTMs use gating mechanisms that control information flow through the network.",
+    "faithfulness":1.0,
+    "answer_relevancy":1.0,
+    "context_recall":1.0,
+    "context_precision":0.5
+  },
+  {
+    "user_input":"What activation functions are commonly used in neural networks?",
+    "retrieved_contexts":[
+      "Activation functions introduce non-linearity into neural networks, allowing them to learn complex patterns. Common activation functions include ReLU, sigmoid, and tanh. The Rectified Linear Unit (ReLU) outputs max(0, x) and is the most widely used in hidden layers because it avoids the vanishing gradient problem and is computationally efficient. Sigmoid maps inputs to (0, 1) and is used in binary classification output layers. Tanh maps inputs to (-1, 1) and is zero-centered, making optimization",
+      "=== Neural Networks and Deep Learning ===",
+      "(-1, 1) and is zero-centered, making optimization easier. Newer variants include Leaky ReLU, ELU, and GELU used in transformers."
+    ],
+    "response":"**Kết luận:** Các hàm kích hoạt thường được sử dụng trong mạng nơ-ron bao gồm ReLU, sigmoid và tanh.\n\n**Giải thích:** ReLU (Rectified Linear Unit) là hàm kích hoạt phổ biến nhất trong các lớp ẩn vì nó giúp tránh vấn đề gradient biến mất và có hiệu suất tính toán cao. Hàm sigmoid được sử dụng trong các lớp đầu ra cho phân loại nhị phân, trong khi tanh được sử dụng để đưa đầu vào về khoảng (-1, 1) và có đặc điểm là trung tâm tại 0, giúp tối ưu hóa dễ dàng hơn. Ngoài ra, các biến thể mới hơn như Leaky ReLU, ELU và GELU cũng được sử dụng trong các mô hình transformer.\n\n**Giới hạn:** Thông tin về các hàm kích hoạt khác ngoài ReLU, sigmoid và tanh là hạn chế, và không có thông tin chi tiết về cách thức hoạt động hoặc ứng dụng cụ thể của các biến thể mới hơn như Leaky ReLU, ELU và GELU.",
+    "reference":"Common activation functions include ReLU, sigmoid, and tanh.",
+    "faithfulness":0.8181818182,
+    "answer_relevancy":0.9661095127,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is the role of pooling layers in CNNs?",
+    "retrieved_contexts":[
+      "Pooling layers are a key component of Convolutional Neural Networks that perform spatial downsampling. Pooling layers reduce spatial dimensions, decreasing computational complexity while retaining important features. Max pooling takes the maximum value in each pooling window, while average pooling computes the mean. By reducing the spatial resolution, pooling layers make the representation smaller and more manageable, reduce the number of parameters, and provide a form of translational",
+      "parameters, and provide a form of translational invariance. Pooling helps control overfitting and reduces the number of computations in subsequent layers.",
+      "Convolutional Neural Networks (CNNs) are a specialized class of neural networks designed for grid-like data. CNNs are specialized for processing grid-like data such as images. They use convolutional layers that apply learnable filters to detect local features like edges, textures, and shapes at different spatial locations. CNNs exploit translational invariance, meaning a feature detector useful in one region of the image can also be useful in other regions. Applications include image"
+    ],
+    "response":"**Kết luận:** Pooling layers play a crucial role in Convolutional Neural Networks (CNNs) by performing spatial downsampling, which reduces the spatial dimensions of the data while retaining important features.\n\n**Giải thích:** Pooling layers decrease computational complexity and help control overfitting by reducing the number of parameters in the network. Max pooling selects the maximum value from each pooling window, while average pooling calculates the mean, both contributing to a more manageable representation of the data. Additionally, pooling layers provide a form of translational invariance, allowing the network to recognize features regardless of their position in the input.\n\n**Giới hạn:** Thông tin về các loại pooling khác nhau và cách chúng ảnh hưởng đến hiệu suất của CNNs có thể chưa được đề cập đầy đủ. Ngoài ra, không có thông tin về các ứng dụng cụ thể của pooling layers trong các bài toán thực tế.",
+    "reference":"Pooling layers reduce spatial dimensions, decreasing computational complexity while retaining important features.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9092197886,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is the transformer architecture?",
+    "retrieved_contexts":[
+      "=== Transformer Architecture and NLP ===",
+      "The transformer architecture revolutionized natural language processing and deep learning. The transformer uses self-attention mechanisms and processes entire sequences in parallel, introduced in 'Attention Is All You Need' (2017). Unlike recurrent networks that process tokens sequentially, transformers can attend to all positions simultaneously, enabling massive parallelism during training. The architecture consists of an encoder stack and a decoder stack, each built from layers of multi-head",
+      "Self-attention is the core mechanism that gives transformers their power. Self-attention allows models to weigh the importance of different words relative to each other in a sequence. For each token, self-attention computes a weighted sum of all token representations in the sequence, where the weights (attention scores) reflect relevance. Queries, keys, and values are linear projections of the input. The attention score between two tokens is the dot product of their query and key vectors,"
+    ],
+    "response":"**Kết luận:** Transformer architecture là một cấu trúc mạng nơ-ron được thiết kế để xử lý ngôn ngữ tự nhiên và học sâu, nổi bật với khả năng xử lý song song và cơ chế tự chú ý.\n\n**Giải thích:** Transformer sử dụng cơ chế tự chú ý để đánh giá tầm quan trọng của các từ trong một chuỗi so với nhau, cho phép mô hình tính toán tổng trọng số của các đại diện từ trong chuỗi. Cấu trúc của transformer bao gồm một ngăn xếp mã hóa và một ngăn xếp giải mã, mỗi ngăn xếp được xây dựng từ các lớp tự chú ý đa đầu. Điều này khác biệt với các mạng hồi tiếp, nơi các token được xử lý tuần tự, giúp transformer đạt được khả năng xử lý song song lớn trong quá trình huấn luyện.\n\n**Giới hạn:** Thông tin về các ứng dụng cụ thể của transformer trong các tác vụ ngôn ngữ tự nhiên hoặc các biến thể của kiến trúc này không được đề cập trong context.",
+    "reference":"The transformer uses self-attention mechanisms and processes entire sequences in parallel, introduced in 'Attention Is All You Need' (2017).",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9320675167,
+    "context_recall":1.0,
+    "context_precision":0.5833333333
+  },
+  {
+    "user_input":"What are word embeddings?",
+    "retrieved_contexts":[
+      "Word embeddings are dense vector representations of words that capture semantic meaning. Word embeddings represent words as dense vectors where semantically similar words are geometrically close. Methods like Word2Vec, GloVe, and FastText learn embeddings by training on large text corpora. The geometric relationships between vectors capture semantic relationships: the vector arithmetic \"king - man + woman ≈ queen\" demonstrates that embeddings encode analogical reasoning. Modern contextual",
+      "Text embeddings are numerical representations that capture the semantic meaning of text. Text embeddings convert text into numerical vectors where semantically similar texts produce geometrically close vectors. Embedding models like OpenAI's text-embedding-3-small, Cohere's embed-v3, and open-source models like E5 and BGE are trained to place semantically similar texts near each other in the embedding space. The embedding dimension typically ranges from 384 to 3072 depending on the model.",
+      "encode analogical reasoning. Modern contextual embeddings (ELMo, BERT) produce different vectors for the same word depending on context."
+    ],
+    "response":"**Kết luận:** Word embeddings là các đại diện vector dày đặc của từ ngữ, giúp nắm bắt ý nghĩa ngữ nghĩa của chúng.\n\n**Giải thích:** Word embeddings biểu diễn các từ dưới dạng các vector dày đặc, trong đó các từ có ý nghĩa tương tự sẽ gần nhau về mặt hình học. Các phương pháp như Word2Vec, GloVe và FastText học các embeddings này bằng cách đào tạo trên các tập văn bản lớn, và mối quan hệ hình học giữa các vector phản ánh các mối quan hệ ngữ nghĩa, ví dụ như phép toán vector \"king - man + woman ≈ queen\" cho thấy khả năng suy luận tương tự được mã hóa trong embeddings.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà các phương pháp như Word2Vec, GloVe và FastText hoạt động để tạo ra word embeddings chưa được đề cập. Ngoài ra, không có thông tin về ứng dụng cụ thể của word embeddings trong các lĩnh vực khác nhau.",
+    "reference":"Word embeddings represent words as dense vectors where semantically similar words are geometrically close.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.905121834,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is transfer learning in NLP?",
+    "retrieved_contexts":[
+      "Transfer learning has become the dominant paradigm in natural language processing. Transfer learning in NLP means pre-training large models on massive corpora then fine-tuning on downstream tasks. A model trained on billions of tokens develops general language understanding that can be adapted with minimal task-specific data. The pre-training phase learns representations encoding grammar, facts, and reasoning patterns. Fine-tuning then adjusts these representations for specific tasks like",
+      "=== Transformer Architecture and NLP ===",
+      "The transformer architecture revolutionized natural language processing and deep learning. The transformer uses self-attention mechanisms and processes entire sequences in parallel, introduced in 'Attention Is All You Need' (2017). Unlike recurrent networks that process tokens sequentially, transformers can attend to all positions simultaneously, enabling massive parallelism during training. The architecture consists of an encoder stack and a decoder stack, each built from layers of multi-head"
+    ],
+    "response":"**Kết luận:** Transfer learning in NLP involves pre-training large models on extensive datasets and then fine-tuning them for specific tasks.\n\n**Giải thích:** In the context of natural language processing, transfer learning allows models to develop a general understanding of language by training on billions of tokens. This pre-training phase helps the model learn representations that encode grammar, facts, and reasoning patterns. Subsequently, fine-tuning adjusts these learned representations to cater to specific downstream tasks, requiring minimal task-specific data.\n\n**Giới hạn:** Thông tin về các loại tác vụ cụ thể mà fine-tuning có thể áp dụng hoặc các ví dụ về mô hình đã sử dụng transfer learning trong NLP không được cung cấp trong context.",
+    "reference":"Pre-training large models on massive corpora then fine-tuning on downstream tasks.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9622338685,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"How does BERT handle language understanding?",
+    "retrieved_contexts":[
+      "BERT (Bidirectional Encoder Representations from Transformers) set new benchmarks across NLP tasks. BERT uses bidirectional transformer training with masked language modeling and next sentence prediction. Unlike GPT which reads text left-to-right, BERT is trained to predict randomly masked tokens using context from both left and right. The next sentence prediction task trains BERT to understand relationships between sentence pairs. BERT's bidirectional representations capture richer contextual",
+      "encode analogical reasoning. Modern contextual embeddings (ELMo, BERT) produce different vectors for the same word depending on context.",
+      "Transfer learning has become the dominant paradigm in natural language processing. Transfer learning in NLP means pre-training large models on massive corpora then fine-tuning on downstream tasks. A model trained on billions of tokens develops general language understanding that can be adapted with minimal task-specific data. The pre-training phase learns representations encoding grammar, facts, and reasoning patterns. Fine-tuning then adjusts these representations for specific tasks like"
+    ],
+    "response":"**Kết luận:** BERT xử lý hiểu biết ngôn ngữ thông qua việc sử dụng đào tạo transformer hai chiều và các nhiệm vụ như dự đoán từ bị che khuất và dự đoán câu tiếp theo.\n\n**Giải thích:** BERT được đào tạo để dự đoán các token bị che khuất bằng cách sử dụng ngữ cảnh từ cả hai phía (trái và phải), điều này giúp nó nắm bắt được ngữ nghĩa phong phú hơn so với các mô hình chỉ đọc từ trái sang phải như GPT. Nhiệm vụ dự đoán câu tiếp theo giúp BERT hiểu mối quan hệ giữa các cặp câu, từ đó cải thiện khả năng hiểu ngôn ngữ.\n\n**Giới hạn:** Thông tin về cách BERT cụ thể áp dụng các hiểu biết này vào các tác vụ ngôn ngữ cụ thể hoặc so sánh hiệu suất của nó với các mô hình khác trong các tác vụ cụ thể không được cung cấp trong context.",
+    "reference":"BERT uses bidirectional transformer training with masked language modeling and next sentence prediction.",
+    "faithfulness":0.8888888889,
+    "answer_relevancy":0.9399464834,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is self-attention in transformers?",
+    "retrieved_contexts":[
+      "Self-attention is the core mechanism that gives transformers their power. Self-attention allows models to weigh the importance of different words relative to each other in a sequence. For each token, self-attention computes a weighted sum of all token representations in the sequence, where the weights (attention scores) reflect relevance. Queries, keys, and values are linear projections of the input. The attention score between two tokens is the dot product of their query and key vectors,",
+      "The transformer architecture revolutionized natural language processing and deep learning. The transformer uses self-attention mechanisms and processes entire sequences in parallel, introduced in 'Attention Is All You Need' (2017). Unlike recurrent networks that process tokens sequentially, transformers can attend to all positions simultaneously, enabling massive parallelism during training. The architecture consists of an encoder stack and a decoder stack, each built from layers of multi-head",
+      "=== Transformer Architecture and NLP ==="
+    ],
+    "response":"**Kết luận:** Self-attention là cơ chế chính trong các mô hình transformer, cho phép chúng đánh giá tầm quan trọng của các từ trong một chuỗi tương đối với nhau.\n\n**Giải thích:** Self-attention hoạt động bằng cách tính toán tổng có trọng số của tất cả các đại diện token trong chuỗi, với trọng số (điểm chú ý) phản ánh mức độ liên quan giữa các token. Mỗi token được biểu diễn thông qua các vector truy vấn (query), khóa (key), và giá trị (value), và điểm chú ý giữa hai token được tính bằng tích vô hướng của các vector truy vấn và khóa của chúng.\n\n**Giới hạn:** Thông tin về cách self-attention được áp dụng trong các tác vụ cụ thể trong xử lý ngôn ngữ tự nhiên (NLP) hoặc các ví dụ cụ thể về hiệu suất của nó trong các mô hình khác nhau không được đề cập trong context.",
+    "reference":"Self-attention allows models to weigh the importance of different words relative to each other in a sequence.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is GPT and how is it trained?",
+    "retrieved_contexts":[
+      "GPT (Generative Pre-trained Transformer) is a family of autoregressive language models developed by OpenAI. GPT uses autoregressive training to predict the next token given previous tokens, trained on massive text datasets. During pre-training, the model learns to predict the next word in billions of text sequences using a unidirectional (left-to-right) transformer. This training objective forces the model to learn grammar, facts, reasoning, and world knowledge. GPT-4 supports up to 128K tokens",
+      "rather than simply predicting the next token. InstructGPT, Alpaca, and Flan-T5 are well-known examples of instruction-tuned models.",
+      "world knowledge. GPT-4 supports up to 128K tokens of context, enabling it to process and generate very long documents, codebases, and extended conversations without losing track of earlier information."
+    ],
+    "response":"**Kết luận:** GPT (Generative Pre-trained Transformer) là một gia đình các mô hình ngôn ngữ tự động do OpenAI phát triển, được huấn luyện để dự đoán từ tiếp theo dựa trên các từ trước đó.\n\n**Giải thích:** GPT sử dụng phương pháp huấn luyện tự động để dự đoán token tiếp theo trong chuỗi văn bản, được đào tạo trên các tập dữ liệu văn bản khổng lồ. Trong quá trình huấn luyện trước, mô hình học cách dự đoán từ tiếp theo trong hàng tỷ chuỗi văn bản bằng cách sử dụng transformer một chiều (từ trái sang phải). Mục tiêu huấn luyện này buộc mô hình phải học ngữ pháp, sự thật, lý luận và kiến thức thế giới.\n\n**Giới hạn:** Thông tin về các phương pháp cụ thể trong quá trình huấn luyện, cũng như các chi tiết về cách thức hoạt động của các mô hình như InstructGPT, Alpaca và Flan-T5 không được đề cập trong context.",
+    "reference":"GPT uses autoregressive training to predict the next token given previous tokens, trained on massive text datasets.",
+    "faithfulness":0.7777777778,
+    "answer_relevancy":0.8568323757,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is instruction tuning?",
+    "retrieved_contexts":[
+      "Instruction tuning is a supervised fine-tuning technique used to make LLMs more useful and aligned. Instruction tuning means fine-tuning pre-trained LLMs on instruction-following datasets to improve alignment with human intent. The model is trained on a diverse collection of (instruction, response) pairs covering tasks like summarization, translation, question answering, and coding. This process teaches the model to follow natural language instructions rather than simply predicting the next",
+      "rather than simply predicting the next token. InstructGPT, Alpaca, and Flan-T5 are well-known examples of instruction-tuned models.",
+      "cost. This detailed telemetry enables root-cause analysis of errors, latency bottlenecks, and unexpected model behaviors."
+    ],
+    "response":"**Kết luận:** Instruction tuning là một kỹ thuật tinh chỉnh có giám sát nhằm cải thiện khả năng sử dụng và sự phù hợp của các mô hình ngôn ngữ lớn (LLMs) với ý định của con người.\n\n**Giải thích:** Instruction tuning liên quan đến việc tinh chỉnh các LLM đã được huấn luyện trước trên các tập dữ liệu theo dõi hướng dẫn, bao gồm các cặp (hướng dẫn, phản hồi) cho nhiều nhiệm vụ như tóm tắt, dịch thuật, trả lời câu hỏi và lập trình. Quá trình này giúp mô hình học cách tuân theo các hướng dẫn bằng ngôn ngữ tự nhiên thay vì chỉ dự đoán token tiếp theo.\n\n**Giới hạn:** Thông tin về các phương pháp cụ thể hoặc kỹ thuật chi tiết trong quá trình instruction tuning không được cung cấp trong context. Ngoài ra, không có thông tin về hiệu quả hoặc ứng dụng thực tế của các mô hình đã được tinh chỉnh.",
+    "reference":"Fine-tuning pre-trained LLMs on instruction-following datasets to improve alignment with human intent.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is RLHF?",
+    "retrieved_contexts":[
+      "Reinforcement Learning from Human Feedback (RLHF) is a technique for aligning large language models with human values. RLHF uses human preferences to align LLMs to be helpful, harmless, and honest. The process involves three steps: first, fine-tuning the LLM with supervised learning on demonstrations; second, training a reward model on human preference comparisons between model outputs; third, optimizing the language model against the reward model using reinforcement learning (typically PPO).",
+      "using reinforcement learning (typically PPO). RLHF has been central to the development of ChatGPT, Claude, and Gemini.",
+      "Faithfulness is the most important RAGAS metric for assessing answer quality. RAGAS computes faithfulness by extracting claims from the answer and checking whether each claim can be inferred from the retrieved context. A high faithfulness score indicates that the LLM's answer is well-grounded in the retrieved passages and does not introduce hallucinated facts. Specifically, RAGAS uses an LLM to decompose the answer into atomic statements, then checks each statement against the retrieved"
+    ],
+    "response":"**Kết luận:** RLHF, hay Reinforcement Learning from Human Feedback, là một kỹ thuật nhằm điều chỉnh các mô hình ngôn ngữ lớn (LLMs) theo giá trị của con người.\n\n**Giải thích:** RLHF sử dụng sở thích của con người để đảm bảo rằng các LLM trở nên hữu ích, vô hại và trung thực. Quá trình này bao gồm ba bước: tinh chỉnh LLM thông qua học có giám sát từ các ví dụ, đào tạo một mô hình thưởng dựa trên so sánh sở thích của con người giữa các đầu ra của mô hình, và cuối cùng là tối ưu hóa mô hình ngôn ngữ dựa trên mô hình thưởng bằng cách sử dụng học tăng cường, thường là phương pháp PPO.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà RLHF được áp dụng cho các mô hình như ChatGPT, Claude và Gemini không được cung cấp chi tiết trong context.",
+    "reference":"Reinforcement Learning from Human Feedback uses human preferences to align LLMs to be helpful, harmless, and honest.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.6968189711,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is chain-of-thought prompting?",
+    "retrieved_contexts":[
+      "Chain-of-thought prompting is a technique that improves LLM reasoning by eliciting intermediate steps. Chain-of-thought prompting encourages LLMs to show reasoning step by step, improving performance on complex tasks. Instead of asking a model to produce a final answer directly, chain-of-thought prompting includes examples that demonstrate a reasoning process — breaking a problem into sub-steps before arriving at the conclusion. This approach significantly improves performance on math word",
+      "significantly improves performance on math word problems, logical reasoning, and commonsense reasoning benchmarks. Zero-shot chain-of-thought simply adds \"Let's think step by step\" to the prompt.",
+      "The LangSmith Prompt Hub is a centralized repository for managing prompt templates. The LangSmith Prompt Hub is a repository for storing, versioning, and sharing prompt templates, supporting A\/B testing and rollback. Teams can push prompt templates to the Hub using the LangSmith client, making them accessible via a unique identifier. Each push creates a new versioned snapshot, enabling rollback to previous versions if a new prompt degrades performance. The Hub facilitates collaboration,"
+    ],
+    "response":"**Kết luận:** Chain-of-thought prompting là một kỹ thuật giúp cải thiện khả năng suy luận của các mô hình ngôn ngữ lớn (LLM) bằng cách khuyến khích chúng trình bày các bước suy luận một cách tuần tự.\n\n**Giải thích:** Kỹ thuật này yêu cầu mô hình không chỉ đưa ra câu trả lời cuối cùng mà còn phải thể hiện quá trình suy nghĩ qua các bước trung gian. Bằng cách chia nhỏ vấn đề thành các bước con trước khi đi đến kết luận, chain-of-thought prompting giúp cải thiện hiệu suất của mô hình trong các tác vụ phức tạp, đặc biệt là trong các bài toán toán học, suy luận logic và các bài kiểm tra suy luận thông thường.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà chain-of-thought prompting được áp dụng trong các tình huống khác nhau hoặc các ví dụ cụ thể về hiệu suất cải thiện vẫn chưa được cung cấp.",
+    "reference":"Chain-of-thought prompting encourages LLMs to show reasoning step by step, improving performance on complex tasks.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is the context length of GPT-4?",
+    "retrieved_contexts":[
+      "world knowledge. GPT-4 supports up to 128K tokens of context, enabling it to process and generate very long documents, codebases, and extended conversations without losing track of earlier information.",
+      "GPT (Generative Pre-trained Transformer) is a family of autoregressive language models developed by OpenAI. GPT uses autoregressive training to predict the next token given previous tokens, trained on massive text datasets. During pre-training, the model learns to predict the next word in billions of text sequences using a unidirectional (left-to-right) transformer. This training objective forces the model to learn grammar, facts, reasoning, and world knowledge. GPT-4 supports up to 128K tokens",
+      "rather than simply predicting the next token. InstructGPT, Alpaca, and Flan-T5 are well-known examples of instruction-tuned models."
+    ],
+    "response":"**Kết luận:** GPT-4 hỗ trợ độ dài ngữ cảnh lên đến 128K tokens.\n\n**Giải thích:** Độ dài ngữ cảnh của GPT-4 cho phép nó xử lý và tạo ra các tài liệu dài, mã nguồn, và các cuộc hội thoại mở rộng mà không bị mất dấu thông tin trước đó. Điều này có nghĩa là mô hình có khả năng duy trì sự liên kết và tính nhất quán trong các văn bản dài.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà độ dài ngữ cảnh này ảnh hưởng đến hiệu suất của mô hình trong các tác vụ khác nhau không được cung cấp trong context.",
+    "reference":"GPT-4 supports up to 128K tokens of context.",
+    "faithfulness":0.75,
+    "answer_relevancy":0.9578398499,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is Retrieval-Augmented Generation?",
+    "retrieved_contexts":[
+      "=== Retrieval-Augmented Generation (RAG) ===",
+      "Retrieval-Augmented Generation (RAG) is an approach that augments language models with external knowledge. RAG combines generative LLMs with retrieval from external knowledge bases to produce grounded, up-to-date answers. Rather than relying solely on knowledge encoded in model parameters during training, RAG retrieves relevant documents at inference time and conditions the LLM on this context. This approach reduces hallucination, enables access to current information, and allows the system to",
+      "Advanced RAG techniques go beyond simple retrieval to improve accuracy and coverage. Advanced RAG techniques include re-ranking, query expansion, HyDE, and iterative retrieval for multi-hop questions. Re-ranking applies a cross-encoder model to re-score retrieved candidates for higher precision. Query expansion generates multiple reformulations of the original query to improve recall. HyDE (Hypothetical Document Embeddings) generates a hypothetical answer first, then uses it to retrieve"
+    ],
+    "response":"**Kết luận:** Retrieval-Augmented Generation (RAG) là một phương pháp kết hợp các mô hình ngôn ngữ với kiến thức bên ngoài để tạo ra các câu trả lời chính xác và cập nhật.\n\n**Giải thích:** RAG kết hợp các mô hình ngôn ngữ sinh (LLMs) với việc truy xuất thông tin từ các cơ sở dữ liệu bên ngoài. Thay vì chỉ dựa vào kiến thức đã được mã hóa trong các tham số của mô hình trong quá trình huấn luyện, RAG truy xuất các tài liệu liên quan trong thời gian suy diễn và điều kiện hóa LLM dựa trên ngữ cảnh này. Điều này giúp giảm thiểu hiện tượng \"hallucination\" và cung cấp thông tin hiện tại.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của các kỹ thuật RAG nâng cao như re-ranking, query expansion, và HyDE chưa được trình bày đầy đủ trong context.",
+    "reference":"RAG combines generative LLMs with retrieval from external knowledge bases to produce grounded, up-to-date answers.",
+    "faithfulness":0.8333333333,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.5
+  },
+  {
+    "user_input":"What are the main components of a RAG pipeline?",
+    "retrieved_contexts":[
+      "A RAG pipeline consists of two primary components working in concert. The main components of a RAG pipeline are a retriever that searches a document store and a generator (LLM) that produces answers from the query and retrieved passages. The retriever takes a user query, searches a document store (vector database, search engine, or traditional database), and returns the most relevant passages. The generator then receives both the original query and the retrieved context to produce a grounded",
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a",
+      "supported by retrieved context. RAGAS provides a standardized benchmark that makes it easy to compare RAG configurations."
+    ],
+    "response":"**Kết luận:** Các thành phần chính của một pipeline RAG bao gồm một retriever và một generator.\n\n**Giải thích:** Retriever là thành phần tìm kiếm trong kho tài liệu, sử dụng truy vấn của người dùng để tìm và trả về các đoạn văn bản liên quan nhất từ cơ sở dữ liệu. Generator, thường là một mô hình ngôn ngữ lớn (LLM), nhận truy vấn gốc và các đoạn văn đã được tìm thấy để tạo ra câu trả lời có căn cứ.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của từng thành phần trong pipeline RAG và các ví dụ cụ thể về ứng dụng của chúng không được cung cấp trong context.",
+    "reference":"A retriever that searches a document store and a generator (LLM) that produces answers from the query and retrieved passages.",
+    "faithfulness":0.8571428571,
+    "answer_relevancy":0.9999995687,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is dense retrieval?",
+    "retrieved_contexts":[
+      "Dense retrieval is a neural approach to document retrieval that outperforms traditional keyword matching. Dense retrieval uses neural embeddings to encode queries and documents, determining relevance by cosine similarity. Both queries and documents are encoded into dense vectors using a bi-encoder model (such as DPR or E5). At query time, the query is encoded and compared to all pre-computed document embeddings using fast nearest-neighbor search. Dense retrieval captures semantic similarity,",
+      "Dense retrieval captures semantic similarity, allowing it to match queries with relevant documents even when they share no common keywords. This contrasts with sparse retrieval methods like BM25 that rely on term frequency.",
+      "Advanced RAG techniques go beyond simple retrieval to improve accuracy and coverage. Advanced RAG techniques include re-ranking, query expansion, HyDE, and iterative retrieval for multi-hop questions. Re-ranking applies a cross-encoder model to re-score retrieved candidates for higher precision. Query expansion generates multiple reformulations of the original query to improve recall. HyDE (Hypothetical Document Embeddings) generates a hypothetical answer first, then uses it to retrieve"
+    ],
+    "response":"**Kết luận:** Dense retrieval là một phương pháp truy xuất tài liệu dựa trên mạng nơ-ron, vượt trội hơn so với các phương pháp tìm kiếm từ khóa truyền thống.\n\n**Giải thích:** Dense retrieval sử dụng các nhúng nơ-ron để mã hóa các truy vấn và tài liệu, xác định độ liên quan thông qua độ tương đồng cosine. Cả truy vấn và tài liệu đều được mã hóa thành các vector dày đặc bằng mô hình bi-encoder, cho phép nó nắm bắt sự tương đồng ngữ nghĩa, từ đó có thể khớp các truy vấn với tài liệu liên quan ngay cả khi chúng không chia sẻ từ khóa chung.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của các mô hình bi-encoder như DPR hoặc E5, cũng như chi tiết về các phương pháp truy xuất thưa như BM25 không được đề cập trong context.",
+    "reference":"Dense retrieval uses neural embeddings to encode queries and documents, determining relevance by cosine similarity.",
+    "faithfulness":0.8888888889,
+    "answer_relevancy":0.8138825397,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"Why is chunking strategy important in RAG?",
+    "retrieved_contexts":[
+      "Chunking strategy significantly impacts the quality of a RAG pipeline. Chunking affects retrieval precision and context window fit; options include fixed-size, semantic, and hierarchical chunking. If chunks are too large, they may contain irrelevant content that distracts the LLM and exceeds context limits. If too small, they may lack the context needed to answer questions. Fixed-size chunking splits text into equal character or token counts with optional overlap. Semantic chunking splits on",
+      "supported by retrieved context. RAGAS provides a standardized benchmark that makes it easy to compare RAG configurations.",
+      "Advanced RAG techniques go beyond simple retrieval to improve accuracy and coverage. Advanced RAG techniques include re-ranking, query expansion, HyDE, and iterative retrieval for multi-hop questions. Re-ranking applies a cross-encoder model to re-score retrieved candidates for higher precision. Query expansion generates multiple reformulations of the original query to improve recall. HyDE (Hypothetical Document Embeddings) generates a hypothetical answer first, then uses it to retrieve"
+    ],
+    "response":"**Kết luận:** Chunking strategy is crucial in RAG (Retrieval-Augmented Generation) because it directly influences retrieval precision and the ability to fit context within the model's limits.\n\n**Giải thích:** The chunking strategy determines how text is divided into manageable pieces for retrieval. If chunks are too large, they may include irrelevant information that distracts the language model (LLM) and exceed its context limits. Conversely, if chunks are too small, they may not provide sufficient context for accurate responses. Different chunking methods, such as fixed-size, semantic, and hierarchical chunking, offer various ways to balance these factors, impacting the overall effectiveness of the RAG pipeline.\n\n**Giới hạn:** The context does not provide specific examples of how each chunking method affects retrieval outcomes or the precise metrics used to evaluate their effectiveness. Additionally, it lacks detailed information on the implementation of advanced RAG techniques and their relationship with chunking strategies.",
+    "reference":"Chunking affects retrieval precision and context window fit; options include fixed-size, semantic, and hierarchical chunking.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.6737769117,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What advanced RAG techniques exist beyond basic retrieval?",
+    "retrieved_contexts":[
+      "Advanced RAG techniques go beyond simple retrieval to improve accuracy and coverage. Advanced RAG techniques include re-ranking, query expansion, HyDE, and iterative retrieval for multi-hop questions. Re-ranking applies a cross-encoder model to re-score retrieved candidates for higher precision. Query expansion generates multiple reformulations of the original query to improve recall. HyDE (Hypothetical Document Embeddings) generates a hypothetical answer first, then uses it to retrieve",
+      "Retrieval-Augmented Generation (RAG) is an approach that augments language models with external knowledge. RAG combines generative LLMs with retrieval from external knowledge bases to produce grounded, up-to-date answers. Rather than relying solely on knowledge encoded in model parameters during training, RAG retrieves relevant documents at inference time and conditions the LLM on this context. This approach reduces hallucination, enables access to current information, and allows the system to",
+      "=== Retrieval-Augmented Generation (RAG) ==="
+    ],
+    "response":"**Kết luận:** Các kỹ thuật RAG nâng cao bao gồm re-ranking, mở rộng truy vấn, HyDE, và truy xuất lặp cho các câu hỏi đa bước.\n\n**Giải thích:** Re-ranking sử dụng mô hình cross-encoder để đánh giá lại các ứng viên đã được truy xuất, nhằm tăng độ chính xác. Mở rộng truy vấn tạo ra nhiều cách diễn đạt khác nhau của truy vấn gốc để cải thiện khả năng thu hồi thông tin. HyDE (Hypothetical Document Embeddings) tạo ra một câu trả lời giả thuyết trước, sau đó sử dụng nó để thực hiện truy xuất, giúp cải thiện độ chính xác và độ bao phủ của thông tin.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của từng kỹ thuật và hiệu quả của chúng trong các tình huống khác nhau còn thiếu. Không có dữ liệu về ứng dụng thực tế hoặc so sánh hiệu suất giữa các kỹ thuật này.",
+    "reference":"Re-ranking, query expansion, HyDE, and iterative retrieval for multi-hop questions.",
+    "faithfulness":0.5833333333,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What are vector databases used for?",
+    "retrieved_contexts":[
+      "Vector databases are purpose-built systems for managing and querying high-dimensional vectors. Vector databases are used for storing and querying high-dimensional vector embeddings for fast similarity search. They store embedding vectors alongside their metadata and support approximate nearest-neighbor (ANN) search at scale. Popular vector databases include Pinecone, Weaviate, Qdrant, Chroma, and Milvus. Unlike traditional relational databases optimized for exact lookups, vector databases use",
+      "=== Vector Databases and Similarity Search ===",
+      "optimized for exact lookups, vector databases use specialized indexing structures to enable fast semantic search over millions or billions of embeddings."
+    ],
+    "response":"**Kết luận:** Vector databases are primarily used for storing and querying high-dimensional vector embeddings to facilitate fast similarity searches.\n\n**Giải thích:** These databases manage high-dimensional vectors, which are often used in machine learning and AI applications to represent data points. They enable approximate nearest-neighbor (ANN) searches, allowing users to quickly find similar items among millions or billions of embeddings. This is achieved through specialized indexing structures that optimize semantic search capabilities.\n\n**Giới hạn:** The context does not provide specific examples of applications or industries that utilize vector databases, nor does it detail the types of data that can be represented as high-dimensional vectors.",
+    "reference":"Storing and querying high-dimensional vector embeddings for fast similarity search.",
+    "faithfulness":0.8888888889,
+    "answer_relevancy":1.0,
+    "context_recall":1.0,
+    "context_precision":0.8333333333
+  },
+  {
+    "user_input":"What is FAISS?",
+    "retrieved_contexts":[
+      "FAISS (Facebook AI Similarity Search) is a widely used library for efficient vector search. FAISS is a library for efficient similarity search supporting exact and approximate nearest neighbor algorithms. Developed by Meta AI Research, FAISS provides a range of index types: IndexFlatL2 for exact brute-force search, IndexIVFFlat for inverted file index with clustering, and IndexHNSWFlat for graph-based approximate search. FAISS is highly optimized for both CPU and GPU execution and supports",
+      "Faithfulness is the most important RAGAS metric for assessing answer quality. RAGAS computes faithfulness by extracting claims from the answer and checking whether each claim can be inferred from the retrieved context. A high faithfulness score indicates that the LLM's answer is well-grounded in the retrieved passages and does not introduce hallucinated facts. Specifically, RAGAS uses an LLM to decompose the answer into atomic statements, then checks each statement against the retrieved",
+      "then checks each statement against the retrieved context. The faithfulness score is the fraction of statements that are supported by context. A target of faithfulness >= 0.8 is commonly used as a quality threshold."
+    ],
+    "response":"**Kết luận:** FAISS (Facebook AI Similarity Search) là một thư viện được sử dụng rộng rãi cho việc tìm kiếm vector hiệu quả.\n\n**Giải thích:** FAISS hỗ trợ các thuật toán tìm kiếm hàng xóm gần nhất chính xác và xấp xỉ, được phát triển bởi Meta AI Research. Thư viện này cung cấp nhiều loại chỉ mục khác nhau như IndexFlatL2 cho tìm kiếm chính xác, IndexIVFFlat cho chỉ mục tệp đảo ngược với phân cụm, và IndexHNSWFlat cho tìm kiếm xấp xỉ dựa trên đồ thị. FAISS được tối ưu hóa cho cả thực thi trên CPU và GPU.\n\n**Giới hạn:** Thông tin về cách sử dụng cụ thể của FAISS, cũng như các ứng dụng thực tế của nó trong các lĩnh vực khác nhau, không được đề cập trong context.",
+    "reference":"FAISS is a library for efficient similarity search supporting exact and approximate nearest neighbor algorithms.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9191480067,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"How do text embeddings capture semantic meaning?",
+    "retrieved_contexts":[
+      "Text embeddings are numerical representations that capture the semantic meaning of text. Text embeddings convert text into numerical vectors where semantically similar texts produce geometrically close vectors. Embedding models like OpenAI's text-embedding-3-small, Cohere's embed-v3, and open-source models like E5 and BGE are trained to place semantically similar texts near each other in the embedding space. The embedding dimension typically ranges from 384 to 3072 depending on the model.",
+      "Word embeddings are dense vector representations of words that capture semantic meaning. Word embeddings represent words as dense vectors where semantically similar words are geometrically close. Methods like Word2Vec, GloVe, and FastText learn embeddings by training on large text corpora. The geometric relationships between vectors capture semantic relationships: the vector arithmetic \"king - man + woman ≈ queen\" demonstrates that embeddings encode analogical reasoning. Modern contextual",
+      "encode analogical reasoning. Modern contextual embeddings (ELMo, BERT) produce different vectors for the same word depending on context."
+    ],
+    "response":"**Kết luận:** Text embeddings capture semantic meaning by converting text into numerical vectors that position semantically similar texts geometrically close to each other in the embedding space.\n\n**Giải thích:** Text embeddings utilize models like OpenAI's text-embedding-3-small and Cohere's embed-v3, which are trained to recognize and group semantically similar texts. This training results in a geometric arrangement where texts with similar meanings are represented by vectors that are close together, allowing for the preservation of semantic relationships in a numerical format.\n\n**Giới hạn:** Thông tin còn thiếu bao gồm các ví dụ cụ thể về cách thức hoạt động của các mô hình embedding khác nhau và cách chúng được áp dụng trong các bài toán thực tế. Ngoài ra, không có thông tin về các ứng dụng cụ thể của text embeddings trong các lĩnh vực khác nhau.",
+    "reference":"Text embeddings convert text into numerical vectors where semantically similar texts produce geometrically close vectors.",
+    "faithfulness":0.9,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is HNSW?",
+    "retrieved_contexts":[
+      "HNSW (Hierarchical Navigable Small World) is a graph-based algorithm for approximate nearest-neighbor search. HNSW builds a hierarchical graph for logarithmic-complexity approximate nearest neighbor search. The algorithm constructs multiple layers of graphs, where higher layers contain fewer nodes with longer-range connections and lower layers contain all nodes with shorter-range connections. During search, HNSW starts at the top layer and greedily navigates toward the query, descending to",
+      "navigates toward the query, descending to finer layers for higher precision. HNSW provides an excellent tradeoff between search accuracy and speed and is the default index type in many vector databases.",
+      "=== Neural Networks and Deep Learning ==="
+    ],
+    "response":"**Kết luận:** HNSW (Hierarchical Navigable Small World) là một thuật toán dựa trên đồ thị dùng để tìm kiếm gần đúng các điểm lân cận.\n\n**Giải thích:** HNSW xây dựng một đồ thị phân cấp với nhiều lớp, trong đó các lớp cao hơn chứa ít nút hơn và có các kết nối dài hơn, trong khi các lớp thấp hơn chứa tất cả các nút với các kết nối ngắn hơn. Khi thực hiện tìm kiếm, HNSW bắt đầu từ lớp trên cùng và điều hướng một cách tham lam về phía truy vấn, sau đó hạ xuống các lớp tinh vi hơn để đạt được độ chính xác cao hơn. Thuật toán này cung cấp sự cân bằng tốt giữa độ chính xác và tốc độ tìm kiếm.\n\n**Giới hạn:** Thông tin về cách HNSW so sánh với các thuật toán tìm kiếm gần đúng khác hoặc các ứng dụng cụ thể của nó trong các cơ sở dữ liệu vector không được đề cập trong context.",
+    "reference":"HNSW builds a hierarchical graph for logarithmic-complexity approximate nearest neighbor search.",
+    "faithfulness":0.9,
+    "answer_relevancy":0.7656713638,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is hybrid search in vector databases?",
+    "retrieved_contexts":[
+      "Hybrid search combines the strengths of both neural and keyword-based retrieval. Hybrid search combines dense vector search with sparse keyword search (BM25) using Reciprocal Rank Fusion. Dense search excels at semantic matching but may miss exact keyword matches; sparse search (BM25) excels at precise keyword matching but misses semantic variants. Reciprocal Rank Fusion (RRF) merges the ranked lists from both approaches by summing reciprocal ranks. The combined ranking is more robust than",
+      "=== Vector Databases and Similarity Search ===",
+      "Vector databases are purpose-built systems for managing and querying high-dimensional vectors. Vector databases are used for storing and querying high-dimensional vector embeddings for fast similarity search. They store embedding vectors alongside their metadata and support approximate nearest-neighbor (ANN) search at scale. Popular vector databases include Pinecone, Weaviate, Qdrant, Chroma, and Milvus. Unlike traditional relational databases optimized for exact lookups, vector databases use"
+    ],
+    "response":"**Kết luận:** Hybrid search in vector databases is a method that integrates both neural and keyword-based retrieval techniques to enhance search effectiveness.\n\n**Giải thích:** Hybrid search combines dense vector search, which focuses on semantic matching, with sparse keyword search (BM25), which is adept at precise keyword matching. By utilizing Reciprocal Rank Fusion (RRF), it merges the ranked results from both methods, allowing for a more comprehensive search that captures both exact keyword matches and semantic variants.\n\n**Giới hạn:** Thông tin còn thiếu bao gồm các ví dụ cụ thể về cách thức hoạt động của hybrid search trong các tình huống thực tế và các ứng dụng cụ thể của nó trong vector databases.",
+    "reference":"Hybrid search combines dense vector search with sparse keyword search (BM25) using Reciprocal Rank Fusion.",
+    "faithfulness":0.7,
+    "answer_relevancy":1.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is LangChain?",
+    "retrieved_contexts":[
+      "=== LangChain Ecosystem ===",
+      "LangChain is an open-source framework that simplifies building applications with large language models. LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections. It provides modular components for prompt management, output parsing, memory, retrieval, and tool use. LangChain supports dozens of LLM providers, vector stores, document loaders, and embedding models through a consistent interface. It is widely used to build",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the"
+    ],
+    "response":"**Kết luận:** LangChain là một framework mã nguồn mở giúp đơn giản hóa việc xây dựng các ứng dụng với các mô hình ngôn ngữ lớn (LLM).\n\n**Giải thích:** LangChain cung cấp các thành phần mô-đun cho việc quản lý prompt, phân tích đầu ra, bộ nhớ, truy xuất và sử dụng công cụ. Nó hỗ trợ nhiều nhà cung cấp LLM, kho vector, bộ tải tài liệu và mô hình nhúng thông qua một giao diện nhất quán, cho phép người dùng dễ dàng tích hợp và phát triển ứng dụng.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà LangChain hoạt động hoặc các ứng dụng thực tế mà nó đã được sử dụng chưa được đề cập trong context.",
+    "reference":"LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections.",
+    "faithfulness":0.8,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.5
+  },
+  {
+    "user_input":"What is LangChain Expression Language (LCEL)?",
+    "retrieved_contexts":[
+      "LangChain Expression Language (LCEL) is a declarative syntax for composing LangChain components. LCEL is a declarative way to compose chains using the pipe operator, supporting streaming, async, and batching. Using the pipe operator (|), components like prompts, LLMs, and output parsers can be chained together in a readable, functional style. LCEL chains support first-class streaming, allowing tokens to be yielded as they are generated. The same chain definition automatically supports",
+      "LangChain is an open-source framework that simplifies building applications with large language models. LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections. It provides modular components for prompt management, output parsing, memory, retrieval, and tool use. LangChain supports dozens of LLM providers, vector stores, document loaders, and embedding models through a consistent interface. It is widely used to build",
+      "=== LangChain Ecosystem ==="
+    ],
+    "response":"**Kết luận:** LangChain Expression Language (LCEL) là một cú pháp khai báo dùng để kết hợp các thành phần của LangChain.\n\n**Giải thích:** LCEL cho phép người dùng tạo chuỗi bằng cách sử dụng toán tử pipe (|), giúp kết nối các thành phần như prompts, LLMs và output parsers theo cách dễ đọc và mang tính chức năng. Nó hỗ trợ các tính năng như streaming, async và batching, cho phép các token được phát sinh và trả về ngay khi chúng được tạo ra.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà LCEL tương tác với các thành phần khác trong LangChain hoặc các ví dụ cụ thể về ứng dụng của nó không được cung cấp trong context.",
+    "reference":"LCEL is a declarative way to compose chains using the pipe operator, supporting streaming, async, and batching.",
+    "faithfulness":0.8571428571,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is LangGraph?",
+    "retrieved_contexts":[
+      "LangGraph is an extension of LangChain for building stateful, multi-actor applications. LangGraph extends LangChain for stateful multi-actor applications as directed graphs, supporting cycles. Unlike linear chains, LangGraph represents workflows as directed graphs where nodes are computation steps and edges control flow between them. Crucially, LangGraph supports cycles — loops where the graph can revisit previous nodes based on conditions — enabling iterative agentic workflows. It provides",
+      "LangChain is an open-source framework that simplifies building applications with large language models. LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections. It provides modular components for prompt management, output parsing, memory, retrieval, and tool use. LangChain supports dozens of LLM providers, vector stores, document loaders, and embedding models through a consistent interface. It is widely used to build",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the"
+    ],
+    "response":"**Kết luận:** LangGraph là một phần mở rộng của LangChain, được thiết kế để xây dựng các ứng dụng đa tác nhân có trạng thái dưới dạng đồ thị có hướng.\n\n**Giải thích:** LangGraph mở rộng LangChain bằng cách cho phép xây dựng các ứng dụng với nhiều tác nhân và trạng thái, sử dụng cấu trúc đồ thị có hướng thay vì chuỗi tuyến tính. Trong LangGraph, các nút đại diện cho các bước tính toán và các cạnh kiểm soát luồng giữa chúng. Đặc biệt, LangGraph hỗ trợ các chu trình, cho phép đồ thị quay lại các nút trước đó dựa trên các điều kiện, từ đó tạo ra các quy trình làm việc lặp đi lặp lại.\n\n**Giới hạn:** Thông tin về cách LangGraph cụ thể hơn trong việc hỗ trợ các chu trình và các ứng dụng thực tế mà nó có thể được áp dụng vẫn chưa được cung cấp.",
+    "reference":"LangGraph extends LangChain for stateful multi-actor applications as directed graphs, supporting cycles.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.8238762059,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What memory types does LangChain support?",
+    "retrieved_contexts":[
+      "LangChain provides multiple memory types to enable conversational context across turns. LangChain supports ConversationBufferMemory, ConversationSummaryMemory, ConversationWindowMemory, and vector store memory. ConversationBufferMemory stores the full conversation history verbatim. ConversationSummaryMemory maintains a running summary to save tokens. ConversationWindowMemory keeps only the last k exchanges. Vector store memory retrieves the most relevant past exchanges using semantic",
+      "LangChain is an open-source framework that simplifies building applications with large language models. LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections. It provides modular components for prompt management, output parsing, memory, retrieval, and tool use. LangChain supports dozens of LLM providers, vector stores, document loaders, and embedding models through a consistent interface. It is widely used to build",
+      "=== LangChain Ecosystem ==="
+    ],
+    "response":"**Kết luận:** LangChain hỗ trợ bốn loại bộ nhớ: ConversationBufferMemory, ConversationSummaryMemory, ConversationWindowMemory, và vector store memory.\n\n**Giải thích:** Mỗi loại bộ nhớ có chức năng riêng biệt: ConversationBufferMemory lưu trữ toàn bộ lịch sử cuộc trò chuyện, ConversationSummaryMemory duy trì một tóm tắt liên tục để tiết kiệm token, ConversationWindowMemory chỉ giữ lại k trao đổi gần nhất, và vector store memory truy xuất các trao đổi quá khứ có liên quan nhất bằng cách sử dụng ngữ nghĩa.\n\n**Giới hạn:** Thông tin về cách thức hoạt động chi tiết của từng loại bộ nhớ hoặc ví dụ cụ thể về ứng dụng của chúng trong thực tế không được cung cấp trong context.",
+    "reference":"ConversationBufferMemory, ConversationSummaryMemory, ConversationWindowMemory, and vector store memory.",
+    "faithfulness":0.875,
+    "answer_relevancy":0.9283414018,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What are LangChain retrievers?",
+    "retrieved_contexts":[
+      "LangChain retrievers are components that fetch relevant documents given a user query. Retrievers fetch relevant documents from a data source given a query, supporting vector stores and BM25. The retriever interface provides a standard get_relevant_documents(query) method regardless of the underlying data source. LangChain includes retrievers for FAISS, Chroma, Pinecone, Elasticsearch, and BM25 keyword search. Multi-query retrievers generate multiple reformulations of the query to improve",
+      "=== LangChain Ecosystem ===",
+      "LangChain is an open-source framework that simplifies building applications with large language models. LangChain is an open-source framework for building LLM applications with abstractions for chains, agents, and data connections. It provides modular components for prompt management, output parsing, memory, retrieval, and tool use. LangChain supports dozens of LLM providers, vector stores, document loaders, and embedding models through a consistent interface. It is widely used to build"
+    ],
+    "response":"**Kết luận:** LangChain retrievers là các thành phần trong hệ sinh thái LangChain, có chức năng tìm kiếm và lấy các tài liệu liên quan dựa trên truy vấn của người dùng.\n\n**Giải thích:** Retrievers hoạt động bằng cách truy xuất các tài liệu từ nguồn dữ liệu dựa trên truy vấn, hỗ trợ các phương pháp như vector stores và BM25. Chúng cung cấp một giao diện tiêu chuẩn với phương thức get_relevant_documents(query), cho phép người dùng lấy tài liệu mà không cần quan tâm đến nguồn dữ liệu cụ thể. LangChain bao gồm các retrievers cho nhiều công nghệ như FAISS, Chroma, Pinecone, Elasticsearch và tìm kiếm từ khóa BM25.\n\n**Giới hạn:** Thông tin về cách thức hoạt động chi tiết của từng loại retriever hoặc các ứng dụng cụ thể của chúng trong các tình huống thực tế không được cung cấp trong context.",
+    "reference":"Retrievers fetch relevant documents from a data source given a query, supporting vector stores and BM25.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9742952466,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is LangSmith?",
+    "retrieved_contexts":[
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the",
+      "=== LangSmith Observability ===",
+      "LangSmith enables comprehensive monitoring of LLM applications in production. LangSmith helps monitor production LLM applications by providing latency percentiles, error rates, token costs, and feedback annotations. Dashboards aggregate metrics across thousands of traces, surfacing p50, p95, and p99 latency, error rate trends, and cost breakdowns by LLM call or chain step. Human evaluators can annotate traces with thumbs-up\/down feedback or custom scores, which can be used to build evaluation"
+    ],
+    "response":"**Kết luận:** LangSmith is a developer platform designed for building and monitoring production-grade LLM (Large Language Model) applications.\n\n**Giải thích:** LangSmith, developed by the LangChain team, facilitates debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. It captures detailed telemetry for each component in a LangChain application with minimal code changes, allowing developers to track performance metrics such as latency, error rates, and token costs.\n\n**Giới hạn:** Thông tin về các tính năng cụ thể khác của LangSmith, cách thức tích hợp với các ứng dụng khác, hoặc ví dụ về ứng dụng thực tế chưa được cung cấp trong context.",
+    "reference":"LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9329008806,
+    "context_recall":1.0,
+    "context_precision":0.8333333333
+  },
+  {
+    "user_input":"What information do LangSmith traces capture?",
+    "retrieved_contexts":[
+      "LangSmith traces provide comprehensive visibility into LLM application behavior. LangSmith traces capture inputs, outputs, latency, token usage, and errors for every component in a chain. Each run (span) in a trace records the exact input passed to a component, the output produced, the time taken, and any errors encountered. For LLM calls specifically, LangSmith also records the number of prompt tokens, completion tokens, and the estimated cost. This detailed telemetry enables root-cause",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the",
+      "calls are automatically traced and sent to the LangSmith server."
+    ],
+    "response":"**Kết luận:** LangSmith traces capture a variety of information related to the behavior of LLM applications.\n\n**Giải thích:** Specifically, LangSmith traces record inputs, outputs, latency, token usage, and errors for each component in a chain. For LLM calls, they also include the number of prompt tokens, completion tokens, and the estimated cost associated with the calls. This comprehensive telemetry allows for detailed analysis and debugging of LLM applications.\n\n**Giới hạn:** Thông tin về cách thức sử dụng hoặc ứng dụng cụ thể của các dữ liệu được ghi lại trong LangSmith traces không được cung cấp.",
+    "reference":"Inputs, outputs, latency, token usage, and errors for every component in a chain.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.6978011744,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is the LangSmith Prompt Hub?",
+    "retrieved_contexts":[
+      "The LangSmith Prompt Hub is a centralized repository for managing prompt templates. The LangSmith Prompt Hub is a repository for storing, versioning, and sharing prompt templates, supporting A\/B testing and rollback. Teams can push prompt templates to the Hub using the LangSmith client, making them accessible via a unique identifier. Each push creates a new versioned snapshot, enabling rollback to previous versions if a new prompt degrades performance. The Hub facilitates collaboration,",
+      "performance. The Hub facilitates collaboration, auditing, and systematic A\/B testing of different prompt strategies.",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the"
+    ],
+    "response":"**Kết luận:** LangSmith Prompt Hub là một kho lưu trữ trung tâm dành cho việc quản lý các mẫu prompt.\n\n**Giải thích:** LangSmith Prompt Hub cho phép lưu trữ, phiên bản hóa và chia sẻ các mẫu prompt, đồng thời hỗ trợ A\/B testing và khả năng quay lại phiên bản trước nếu một prompt mới làm giảm hiệu suất. Các nhóm có thể đẩy các mẫu prompt lên Hub thông qua khách hàng LangSmith, tạo ra các bản sao phiên bản mới với một định danh duy nhất cho mỗi lần đẩy.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà các nhóm có thể sử dụng Hub để hợp tác và thực hiện A\/B testing chưa được cung cấp.",
+    "reference":"A repository for storing, versioning, and sharing prompt templates, supporting A\/B testing and rollback.",
+    "faithfulness":0.8571428571,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"How does LangSmith help monitor production LLM applications?",
+    "retrieved_contexts":[
+      "LangSmith enables comprehensive monitoring of LLM applications in production. LangSmith helps monitor production LLM applications by providing latency percentiles, error rates, token costs, and feedback annotations. Dashboards aggregate metrics across thousands of traces, surfacing p50, p95, and p99 latency, error rate trends, and cost breakdowns by LLM call or chain step. Human evaluators can annotate traces with thumbs-up\/down feedback or custom scores, which can be used to build evaluation",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the",
+      "LangSmith traces provide comprehensive visibility into LLM application behavior. LangSmith traces capture inputs, outputs, latency, token usage, and errors for every component in a chain. Each run (span) in a trace records the exact input passed to a component, the output produced, the time taken, and any errors encountered. For LLM calls specifically, LangSmith also records the number of prompt tokens, completion tokens, and the estimated cost. This detailed telemetry enables root-cause"
+    ],
+    "response":"**Kết luận:** LangSmith giúp theo dõi các ứng dụng LLM trong sản xuất thông qua việc cung cấp các chỉ số chi tiết về hiệu suất và chi phí.\n\n**Giải thích:** LangSmith cung cấp các thông tin như percentiles độ trễ (p50, p95, p99), tỷ lệ lỗi, chi phí token và các chú thích phản hồi từ người dùng. Bằng cách tự động theo dõi các cuộc gọi trong ứng dụng LangChain, LangSmith cho phép người phát triển có cái nhìn tổng quan về hành vi của ứng dụng LLM, từ đó giúp xác định nguyên nhân gốc rễ của các vấn đề.\n\n**Giới hạn:** Thông tin về cách LangSmith tích hợp với các công cụ khác hoặc các phương pháp cụ thể để cải thiện hiệu suất ứng dụng LLM không được đề cập trong context.",
+    "reference":"LangSmith provides latency percentiles, error rates, token costs, and feedback annotations.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.8383894268,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What are LangSmith datasets used for?",
+    "retrieved_contexts":[
+      "LangSmith datasets are collections of example inputs and expected outputs used for systematic evaluation. LangSmith datasets are used for systematic evaluation using example inputs and expected outputs to compare model versions or prompt changes. By curating datasets of representative queries and reference answers, teams can run batch evaluation experiments when updating models or prompts. The evaluation results are logged as traces, enabling direct comparison of performance metrics across",
+      "LangSmith is a developer platform for building production-grade LLM applications. LangSmith is a platform for debugging, testing, evaluating, and monitoring LLM applications through automatic tracing. Developed by the LangChain team, LangSmith captures detailed telemetry for every component in a LangChain application with minimal code changes. By setting the LANGCHAIN_TRACING_V2 environment variable to true and providing an API key, all LangChain calls are automatically traced and sent to the",
+      "LangSmith enables comprehensive monitoring of LLM applications in production. LangSmith helps monitor production LLM applications by providing latency percentiles, error rates, token costs, and feedback annotations. Dashboards aggregate metrics across thousands of traces, surfacing p50, p95, and p99 latency, error rate trends, and cost breakdowns by LLM call or chain step. Human evaluators can annotate traces with thumbs-up\/down feedback or custom scores, which can be used to build evaluation"
+    ],
+    "response":"**Kết luận:** LangSmith datasets are used for systematic evaluation of model versions or prompt changes in LLM applications.\n\n**Giải thích:** These datasets consist of example inputs and expected outputs, allowing teams to conduct batch evaluation experiments. By curating representative queries and reference answers, LangSmith datasets facilitate the comparison of performance metrics across different iterations of models or prompts, ensuring that updates lead to improved outcomes.\n\n**Giới hạn:** Thông tin còn thiếu bao gồm các ví dụ cụ thể về loại dữ liệu trong LangSmith datasets và cách thức thực hiện các thí nghiệm đánh giá.",
+    "reference":"Systematic evaluation using example inputs and expected outputs to compare model versions or prompt changes.",
+    "faithfulness":0.8571428571,
+    "answer_relevancy":0.8320411435,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is RAGAS?",
+    "retrieved_contexts":[
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a",
+      "supported by retrieved context. RAGAS provides a standardized benchmark that makes it easy to compare RAG configurations.",
+      "=== RAGAS Evaluation Framework ==="
+    ],
+    "response":"**Kết luận:** RAGAS (Retrieval Augmented Generation Assessment) là một framework được thiết kế để đánh giá các pipeline RAG.\n\n**Giải thích:** RAGAS là một framework mã nguồn mở sử dụng các chỉ số không dựa trên tham chiếu từ các mô hình ngôn ngữ lớn (LLM) để đánh giá chất lượng của các câu trả lời trong các pipeline RAG. Khác với các chỉ số NLP truyền thống như BLEU hay ROUGE, RAGAS đánh giá các câu trả lời dựa trên các tiêu chí như tính chính xác, sự liên quan và sự hỗ trợ từ ngữ cảnh đã được truy xuất.\n\n**Giới hạn:** Thông tin về cách thức hoạt động cụ thể của RAGAS, cũng như các ví dụ thực tế về việc áp dụng framework này trong các tình huống cụ thể chưa được cung cấp.",
+    "reference":"RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"How does RAGAS compute faithfulness?",
+    "retrieved_contexts":[
+      "Faithfulness is the most important RAGAS metric for assessing answer quality. RAGAS computes faithfulness by extracting claims from the answer and checking whether each claim can be inferred from the retrieved context. A high faithfulness score indicates that the LLM's answer is well-grounded in the retrieved passages and does not introduce hallucinated facts. Specifically, RAGAS uses an LLM to decompose the answer into atomic statements, then checks each statement against the retrieved",
+      "then checks each statement against the retrieved context. The faithfulness score is the fraction of statements that are supported by context. A target of faithfulness >= 0.8 is commonly used as a quality threshold.",
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a"
+    ],
+    "response":"**Kết luận:** RAGAS computes faithfulness by extracting claims from an answer and verifying whether each claim can be inferred from the retrieved context.\n\n**Giải thích:** Cụ thể, RAGAS sử dụng một mô hình ngôn ngữ lớn (LLM) để phân tích câu trả lời thành các tuyên bố nguyên tử. Sau đó, mỗi tuyên bố được kiểm tra xem nó có được hỗ trợ bởi ngữ cảnh đã được truy xuất hay không. Điểm số faithfulness được tính bằng tỷ lệ phần trăm các tuyên bố được hỗ trợ bởi ngữ cảnh, với mục tiêu đạt được điểm số >= 0.8 để đảm bảo chất lượng.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà RAGAS thực hiện việc kiểm tra các tuyên bố so với ngữ cảnh còn thiếu, cũng như không có chi tiết về các yếu tố khác có thể ảnh hưởng đến điểm số faithfulness.",
+    "reference":"By extracting claims from the answer and checking whether each claim can be inferred from the retrieved context.",
+    "faithfulness":0.75,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is answer relevancy in RAGAS?",
+    "retrieved_contexts":[
+      "Answer relevancy measures how well the generated answer addresses the question asked. Answer relevancy in RAGAS measures how well the answer addresses the original question by generating synthetic questions from the answer. The metric uses an LLM to generate several questions that the answer would naturally address, then computes the cosine similarity between these synthetic questions and the original question. A high score indicates the answer is focused and directly responsive to the",
+      "RAGAS evaluation requires specific inputs to compute its metrics. RAGAS evaluation requires user queries, generated answers, retrieved contexts (list of passages), and optionally reference answers. The user_input field contains the question posed to the RAG system. The response field contains the LLM-generated answer. The retrieved_contexts field must be a list of individual passage strings (not a single concatenated string) so RAGAS can evaluate each passage independently. The reference field",
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a"
+    ],
+    "response":"**Kết luận:** Answer relevancy in RAGAS đo lường mức độ mà câu trả lời được tạo ra đáp ứng câu hỏi đã được đặt ra.\n\n**Giải thích:** Trong RAGAS, answer relevancy được xác định bằng cách tạo ra các câu hỏi tổng hợp từ câu trả lời và so sánh chúng với câu hỏi gốc thông qua độ tương đồng cosine. Nếu câu trả lời có thể trả lời tốt cho các câu hỏi tổng hợp này, điều đó cho thấy câu trả lời đó tập trung và phản hồi trực tiếp đến câu hỏi ban đầu.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà các câu hỏi tổng hợp được tạo ra từ câu trả lời và cách tính toán độ tương đồng cosine không được cung cấp trong context.",
+    "reference":"Measures how well the answer addresses the original question by generating synthetic questions from the answer.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is context recall in RAGAS?",
+    "retrieved_contexts":[
+      "Context recall measures how thoroughly the retrieved passages cover the information needed to answer the question. Context recall in RAGAS measures how well the retrieved context covers the information needed, evaluated against a ground truth reference. The metric compares each sentence of the reference answer against the retrieved context, checking whether the context contains the information needed to derive that sentence. A high recall score means the retriever successfully fetched the",
+      "supported by retrieved context. RAGAS provides a standardized benchmark that makes it easy to compare RAG configurations.",
+      "RAGAS evaluation requires specific inputs to compute its metrics. RAGAS evaluation requires user queries, generated answers, retrieved contexts (list of passages), and optionally reference answers. The user_input field contains the question posed to the RAG system. The response field contains the LLM-generated answer. The retrieved_contexts field must be a list of individual passage strings (not a single concatenated string) so RAGAS can evaluate each passage independently. The reference field"
+    ],
+    "response":"**Kết luận:** Context recall trong RAGAS đo lường mức độ đầy đủ của các đoạn văn được truy xuất trong việc bao phủ thông tin cần thiết để trả lời câu hỏi.\n\n**Giải thích:** Context recall được đánh giá bằng cách so sánh từng câu trong câu trả lời tham chiếu với ngữ cảnh đã được truy xuất, kiểm tra xem ngữ cảnh có chứa thông tin cần thiết để suy ra câu đó hay không. Nếu điểm recall cao, điều đó có nghĩa là hệ thống đã thành công trong việc lấy được ngữ cảnh hỗ trợ cho câu trả lời.\n\n**Giới hạn:** Thông tin về cách tính toán điểm recall cụ thể hoặc các ví dụ minh họa về các trường hợp thành công và thất bại trong việc truy xuất ngữ cảnh không được cung cấp trong context.",
+    "reference":"Measures how well the retrieved context covers the information needed, evaluated against a ground truth reference.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.8333333333
+  },
+  {
+    "user_input":"What inputs does RAGAS evaluation require?",
+    "retrieved_contexts":[
+      "RAGAS evaluation requires specific inputs to compute its metrics. RAGAS evaluation requires user queries, generated answers, retrieved contexts (list of passages), and optionally reference answers. The user_input field contains the question posed to the RAG system. The response field contains the LLM-generated answer. The retrieved_contexts field must be a list of individual passage strings (not a single concatenated string) so RAGAS can evaluate each passage independently. The reference field",
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a",
+      "=== RAGAS Evaluation Framework ==="
+    ],
+    "response":"**Kết luận:** RAGAS evaluation yêu cầu một số đầu vào cụ thể để tính toán các chỉ số của nó.\n\n**Giải thích:** Các đầu vào cần thiết bao gồm: user queries (câu hỏi do người dùng đặt ra cho hệ thống RAG), generated answers (câu trả lời được tạo ra bởi LLM), retrieved contexts (danh sách các đoạn văn bản được truy xuất, yêu cầu phải là danh sách các chuỗi đoạn văn riêng lẻ), và tùy chọn là reference answers (câu trả lời tham khảo). Các đầu vào này giúp RAGAS đánh giá chất lượng của các câu trả lời dựa trên các tiêu chí như tính chính xác, sự liên quan và sự hỗ trợ từ ngữ cảnh đã được truy xuất.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà các đầu vào này được sử dụng trong quá trình đánh giá không được cung cấp. Ngoài ra, không có thông tin về cách RAGAS xử lý các đầu vào tùy chọn như reference answers.",
+    "reference":"User queries, generated answers, retrieved contexts (list of passages), and optionally reference answers.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9484463924,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is Guardrails AI?",
+    "retrieved_contexts":[
+      "Guardrails AI is a framework for adding safety and validation layers to LLM applications. Guardrails AI is an open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions. It provides a declarative way to specify constraints on LLM outputs and automatically enforce them. Validators can check for PII, toxicity, bias, schema compliance, and many other properties. When validation fails, Guardrails can take configurable actions: raise an exception,",
+      "=== Guardrails AI and LLM Safety ===",
+      "RAGAS (Retrieval Augmented Generation Assessment) is a framework specifically designed for evaluating RAG pipelines. RAGAS is an open-source framework for evaluating RAG pipelines using LLM-based reference-free metrics. Unlike traditional NLP metrics like BLEU or ROUGE that require exact match comparisons, RAGAS uses LLMs as evaluators to assess quality dimensions that matter for RAG: whether answers are factually grounded, relevant, and supported by retrieved context. RAGAS provides a"
+    ],
+    "response":"**Kết luận:** Guardrails AI là một framework mã nguồn mở được thiết kế để thêm các lớp an toàn và xác thực vào các ứng dụng LLM.\n\n**Giải thích:** Guardrails AI cho phép người dùng định nghĩa các ràng buộc đối với đầu ra của LLM và tự động thực thi chúng. Nó cung cấp các công cụ để kiểm tra các thuộc tính như thông tin cá nhân nhạy cảm (PII), độc hại, thiên kiến, và tuân thủ sơ đồ. Khi việc xác thực không thành công, Guardrails AI có thể thực hiện các hành động đã được cấu hình trước, chẳng hạn như ném ra một ngoại lệ.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà Guardrails AI thực hiện các kiểm tra và hành động khi xác thực thất bại còn thiếu. Ngoài ra, không có thông tin về các ứng dụng thực tế hoặc ví dụ cụ thể về việc sử dụng Guardrails AI.",
+    "reference":"An open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What is PII and why is it important to detect in LLM responses?",
+    "retrieved_contexts":[
+      "PII (Personally Identifiable Information) is a critical concern for LLM deployments. PII is Personally Identifiable Information; exposing it can violate GDPR and HIPAA privacy regulations. PII includes names, email addresses, phone numbers, social security numbers, credit card numbers, passport numbers, and other data that can identify an individual. When LLMs process or generate text containing PII, they risk exposing sensitive information to unauthorized parties. GDPR (General Data Protection",
+      "present in training data. PII leakage happens when models reproduce sensitive personal information from training data. Jailbreaking attacks use carefully crafted prompts to bypass safety filters and elicit prohibited content. Defense strategies include RLHF, Constitutional AI, output filters, and red-teaming.",
+      "LLM safety is a rapidly evolving area addressing risks associated with deploying large language models. Common AI safety concerns with LLMs include hallucination, toxicity, bias, PII leakage, and jailbreaking attacks. Hallucination refers to the model generating plausible-sounding but factually incorrect information. Toxicity involves generating offensive, harmful, or abusive content. Bias occurs when models perpetuate or amplify societal prejudices present in training data. PII leakage happens"
+    ],
+    "response":"**Kết luận:** PII, hay Thông tin Cá nhân Nhận dạng, là thông tin nhạy cảm có thể xác định một cá nhân và việc phát hiện PII trong phản hồi của LLM là rất quan trọng để bảo vệ quyền riêng tư và tuân thủ các quy định pháp lý như GDPR và HIPAA.\n\n**Giải thích:** PII bao gồm các thông tin như tên, địa chỉ email, số điện thoại, số an sinh xã hội, và các dữ liệu khác có thể nhận diện cá nhân. Khi LLM xử lý hoặc tạo ra văn bản chứa PII, có nguy cơ thông tin nhạy cảm bị lộ ra ngoài, dẫn đến vi phạm các quy định về quyền riêng tư. Việc phát hiện và ngăn chặn PII trong phản hồi của LLM giúp bảo vệ người dùng khỏi việc bị lạm dụng thông tin cá nhân và giảm thiểu rủi ro pháp lý cho các tổ chức triển khai LLM.\n\n**Giới hạn:** Thông tin về các phương pháp cụ thể để phát hiện PII trong phản hồi của LLM không được cung cấp trong context. Ngoài ra, không có thông tin chi tiết về các hậu quả pháp lý cụ thể khi vi phạm quy định liên quan đến PII.",
+    "reference":"PII is Personally Identifiable Information; exposing it can violate GDPR and HIPAA privacy regulations.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9950739485,
+    "context_recall":1.0,
+    "context_precision":0.9999999999
+  },
+  {
+    "user_input":"What does structured output validation ensure?",
+    "retrieved_contexts":[
+      "Structured output validation ensures that LLM responses conform to expected data formats. Structured output validation ensures that LLM responses conform to expected schemas such as JSON, detecting and fixing invalid formats. LLMs frequently produce JSON with common errors: using single quotes instead of double quotes, adding trailing commas, including markdown code fences, or producing syntactically invalid structures. Output validators can detect these issues and apply repair strategies",
+      "detect these issues and apply repair strategies before passing the output to downstream systems. Validators can attempt repairs like stripping code fences, fixing quote styles, and removing trailing commas, falling back to an error response if repair fails.",
+      "Guardrails AI is a framework for adding safety and validation layers to LLM applications. Guardrails AI is an open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions. It provides a declarative way to specify constraints on LLM outputs and automatically enforce them. Validators can check for PII, toxicity, bias, schema compliance, and many other properties. When validation fails, Guardrails can take configurable actions: raise an exception,"
+    ],
+    "response":"**Kết luận:** Structured output validation ensures that LLM responses conform to expected data formats and schemas.\n\n**Giải thích:** Cụ thể, structured output validation kiểm tra và sửa chữa các định dạng không hợp lệ trong phản hồi của LLM, chẳng hạn như JSON. Nó phát hiện các lỗi phổ biến như sử dụng dấu nháy đơn thay vì dấu nháy kép, thêm dấu phẩy thừa, hoặc tạo ra các cấu trúc không hợp lệ về mặt cú pháp. Các bộ xác thực đầu ra có thể phát hiện những vấn đề này và áp dụng các chiến lược sửa chữa trước khi chuyển đầu ra đến các hệ thống hạ nguồn.\n\n**Giới hạn:** Thông tin về các loại định dạng khác ngoài JSON mà structured output validation có thể áp dụng không được đề cập. Ngoài ra, không có thông tin chi tiết về cách thức hoạt động cụ thể của các chiến lược sửa chữa.",
+    "reference":"That LLM responses conform to expected schemas such as JSON, detecting and fixing invalid formats.",
+    "faithfulness":1.0,
+    "answer_relevancy":0.9516222244,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What is Constitutional AI?",
+    "retrieved_contexts":[
+      "Constitutional AI is an approach to aligning language models with ethical principles. Constitutional AI is a technique where a model is given principles to follow and uses self-critique to improve its responses. Developed by Anthropic, Constitutional AI trains a model to evaluate its own responses against a set of constitutional principles (e.g., \"do not generate harmful content\") and revise outputs that violate them. This process involves a critique phase where the model identifies problems",
+      "phase where the model identifies problems and a revision phase where it rewrites the output to comply with the principles. Constitutional AI reduces the need for human feedback on harmful outputs.",
+      "Guardrails AI is a framework for adding safety and validation layers to LLM applications. Guardrails AI is an open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions. It provides a declarative way to specify constraints on LLM outputs and automatically enforce them. Validators can check for PII, toxicity, bias, schema compliance, and many other properties. When validation fails, Guardrails can take configurable actions: raise an exception,"
+    ],
+    "response":"**Kết luận:** Constitutional AI là một phương pháp nhằm điều chỉnh các mô hình ngôn ngữ theo các nguyên tắc đạo đức.\n\n**Giải thích:** Constitutional AI được phát triển bởi Anthropic, cho phép mô hình tự đánh giá và tự phê bình các phản hồi của mình dựa trên một tập hợp các nguyên tắc hiến pháp, như \"không tạo ra nội dung gây hại\". Quá trình này bao gồm hai giai đoạn: giai đoạn phê bình, nơi mô hình xác định các vấn đề trong phản hồi, và giai đoạn sửa đổi, nơi nó viết lại đầu ra để tuân thủ các nguyên tắc đã đề ra.\n\n**Giới hạn:** Thông tin về các nguyên tắc cụ thể được sử dụng trong Constitutional AI và cách thức triển khai thực tế của nó còn thiếu.",
+    "reference":"A technique where a model is given principles to follow and uses self-critique to improve its responses.",
+    "faithfulness":0.7777777778,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":1.0
+  },
+  {
+    "user_input":"What are common AI safety concerns with LLMs?",
+    "retrieved_contexts":[
+      "LLM safety is a rapidly evolving area addressing risks associated with deploying large language models. Common AI safety concerns with LLMs include hallucination, toxicity, bias, PII leakage, and jailbreaking attacks. Hallucination refers to the model generating plausible-sounding but factually incorrect information. Toxicity involves generating offensive, harmful, or abusive content. Bias occurs when models perpetuate or amplify societal prejudices present in training data. PII leakage happens",
+      "=== Guardrails AI and LLM Safety ===",
+      "Guardrails AI is a framework for adding safety and validation layers to LLM applications. Guardrails AI is an open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions. It provides a declarative way to specify constraints on LLM outputs and automatically enforce them. Validators can check for PII, toxicity, bias, schema compliance, and many other properties. When validation fails, Guardrails can take configurable actions: raise an exception,"
+    ],
+    "response":"**Kết luận:** Các mối quan tâm an toàn AI phổ biến với các mô hình ngôn ngữ lớn (LLMs) bao gồm ảo tưởng, độc hại, thiên kiến, rò rỉ thông tin cá nhân (PII), và các cuộc tấn công jailbreak.\n\n**Giải thích:** Ảo tưởng xảy ra khi mô hình tạo ra thông tin có vẻ hợp lý nhưng thực tế lại sai lệch. Độc hại liên quan đến việc tạo ra nội dung gây xúc phạm, có hại hoặc lạm dụng. Thiên kiến xuất hiện khi các mô hình duy trì hoặc khuếch đại những định kiến xã hội có trong dữ liệu huấn luyện. Rò rỉ PII đề cập đến việc tiết lộ thông tin cá nhân nhạy cảm.\n\n**Giới hạn:** Thông tin về cách thức cụ thể mà các mối quan tâm này ảnh hưởng đến việc triển khai LLMs hoặc các ví dụ cụ thể về từng loại mối quan tâm không được cung cấp trong context.",
+    "reference":"Hallucination, toxicity, bias, PII leakage, and jailbreaking attacks.",
+    "faithfulness":0.5,
+    "answer_relevancy":0.0,
+    "context_recall":1.0,
+    "context_precision":0.8333333333
+  }
+]

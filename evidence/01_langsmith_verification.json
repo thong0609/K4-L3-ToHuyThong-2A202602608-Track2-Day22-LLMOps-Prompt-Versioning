@@ -1,0 +1,43 @@
+{
+  "project": "day22-lab",
+  "endpoint": "https://aws.api.smith.langchain.com",
+  "trace_count": 50,
+  "all_50_questions_present": true,
+  "all_completed_without_error": true,
+  "sample_trace_id": "01a119f4-92aa-7421-91dd-dbf2974ba938",
+  "sample_tree": [
+    "rag-query",
+    "RunnableSequence",
+    "RunnableParallel<context,question>",
+    "RunnableSequence",
+    "VectorStoreRetriever",
+    "format_docs",
+    "RunnablePassthrough",
+    "ChatPromptTemplate",
+    "ChatOpenAI",
+    "StrOutputParser"
+  ],
+  "retrieved_document_count": 3,
+  "sample_question": "What are common AI safety concerns with LLMs?",
+  "sample_answer": "Common AI safety concerns with large language models (LLMs) include:\n\n1. **Hallucination**: The model generating plausible-sounding but factually incorrect information.\n2. **Toxicity**: Generating offensive, harmful, or abusive content.\n3. **Bias**: Perpetuating or amplifying societal prejudices present in the training data.\n4. **PII Leakage**: Unintentionally disclosing personally identifiable information.\n5. **Jailbreaking Attacks**: Attempts to manipulate the model to bypass safety measures or generate undesirable outputs.",
+  "sample_documents": [
+    {
+      "id": "7f09479a-67a0-4631-8a1c-0003d1c1655b",
+      "metadata": {},
+      "page_content": "LLM safety is a rapidly evolving area addressing risks associated with deploying large language models. Common AI safety concerns with LLMs include hallucination, toxicity, bias, PII leakage, and jailbreaking attacks. Hallucination refers to the model generating plausible-sounding but factually incorrect information. Toxicity involves generating offensive, harmful, or abusive content. Bias occurs when models perpetuate or amplify societal prejudices present in training data. PII leakage happens",
+      "type": "Document"
+    },
+    {
+      "id": "e8405487-8683-494e-bd7e-99d5119cc313",
+      "metadata": {},
+      "page_content": "=== Guardrails AI and LLM Safety ===",
+      "type": "Document"
+    },
+    {
+      "id": "544016f9-78ef-4483-b537-ecb7373a3c40",
+      "metadata": {},
+      "page_content": "Guardrails AI is a framework for adding safety and validation layers to LLM applications. Guardrails AI is an open-source framework for adding validation and safety checks to LLM outputs with configurable on-fail actions. It provides a declarative way to specify constraints on LLM outputs and automatically enforce them. Validators can check for PII, toxicity, bias, schema compliance, and many other properties. When validation fails, Guardrails can take configurable actions: raise an exception,",
+      "type": "Document"
+    }
+  ]
+}
